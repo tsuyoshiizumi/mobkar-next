@@ -35,3 +35,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 # mobkar-next
+
+## geminicli
+improve-code.txt にプロンプトを
+./prompts/dataの中に資料を保存して
+gemini run --prompt prompts/improve-code.txt --files ./prompts/data
