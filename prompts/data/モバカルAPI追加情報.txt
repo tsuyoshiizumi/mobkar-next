@@ -1,0 +1,62 @@
+phpでの例
+<?php
+// ランダムは何でもよい
+$random = "AAAAAAAAAAAAAAABBBBBBBBBBBBBBBBB");
+// ランダムを秘密鍵(sha256)で暗号化
+$prev_enc =hash_hmac('sha256', $random, "1234567890abcdefghijklmnopqrstuvwxyz",false);
+// 暗号化したものをbase64でエンコード
+$encoded = base64_encode($prev_enc);
+echo "$encoded \n";
+
+// ランダムもbase64でエンコード
+$enc_random = base64_encode($random);
+echo "$random \n";
+echo "$enc_random \n";
+
+?>
+
+メール
+
+
+
+---------- Forwarded message ---------
+From: Takahiro Ishida <takahiro.ishida@ntt.com>
+Date: 2025年8月1日(金) 11:09
+Subject: デモ環境の情報につきまして
+To: igarashi@edu.k.u-tokyo.ac.jp <igarashi@edu.k.u-tokyo.ac.jp>, ipizumi@gmail.com <ipizumi@gmail.com>
+Cc: movacal_support@ntt.com <movacal_support@ntt.com>, Ryou Momochi <r.momochi@ntt.com>, Nami Ogata <nami.ogata@ntt.com>
+
+
+医療法人社団醫光会 おうちで笑顔クリニック
+五十嵐様、和泉様
+ 
+いつもお世話になっております、
+NTTプレシジョンメディシンの石田と申します。
+ 
+APIにおいてデモ環境でお試し頂きたく
+デモ環境APIのアクセス情報と、
+デモ環境のログインユーザー・パスワード、
+並びにCredential情報取得部分のサンプルコード(PHP)を添付いたしました。
+ご確認お願い申し上げます。
+（パスワードは別メールでご案内いたします。）
+ 
+数点注意事項がございます。
+・デモ環境でのAPIのリクエストは
+link.movacal.net宛ではなくdemo.movacal.net宛にお願いいたします。
+・APIは２秒に1回リクエスト可能です。
+・同一クレデンシャルは100回利用可能で、クレデンシャルは5分に1回取得可能です。
+・現在Basic認証は使用しておりません（デモ環境、本番環境両方とも）。
+ 
+ご不明点があればご連絡お願い致します。
+ 
+以上です。
+よろしくお願いいたします。
+－－－－－－－－－－－－－－－－－－－
+ＮＴＴプレシジョンメディシン株式会社
+メディカルインフォーメーション事業部
+石田　高大（いしだ　たかひろ）
+takahiro.ishida@ntt.com
+〒221-0031　
+神奈川県横浜市神奈川区新浦島町1-1-32
+アクアリアタワー14階
+－－－－－－－－－－－－－－－－－－－
